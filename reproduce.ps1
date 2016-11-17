@@ -28,10 +28,10 @@ Invoke-WebRequest $DOTNET_INSTALL_URL -OutFile $DOTNET_INSTALL -ErrorAction Stop
 
 & $DOTNET test "$ROOT_PATH\test\Moq.Fail.Test"
 Write-Host ""
-Write-Host -Color Red ":: WHY YOU NO WORK?! ::"
+Write-Host -ForegroundColor Red ":: WHY YOU NO WORK?! ::"
 Write-Host ""
 
 & $DOTNET test "$ROOT_PATH\test\Moq.Pass.Test"
 Write-Host ""
-Write-Host -Color Green ":: bows head ::"
+Write-Host -ForegroundColor Green ":: bows head ::"
 Write-Host ""
